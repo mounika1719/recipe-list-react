@@ -8,7 +8,7 @@ const Recipes = ({e})=>{
             <h2>{label}</h2>
             <img src={image} alt={label} />
             <a href={url} target='_blank' rel='noopener
-            noreferrer'>URL</a>
+            noreferrer'>live video</a>
             <button onClick={()=>setShow(!show)}>Ingredients</button>
             {show &&<RecipesData ingredients={ingredients} />}
         </div>
