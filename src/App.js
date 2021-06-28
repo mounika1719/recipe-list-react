@@ -28,31 +28,25 @@ const [alert,setAlert] = useState("");
       setAlert('Enter Your Recipe Name')
     }
   }
- 
   const handleChange =(e)=>{
     setQuery(e.target.value)
   }
-
   const submitData = e =>{
     e.preventDefault();
     getData();
   }
-
   return (
     <div className="App">
       <h1 >Best Food Recipes</h1>
       <form className='search-form' onSubmit={submitData}>
         {alert!==""&&<Alert alert={alert} />}
-
         <input type='text'
          placeholder='Search food'
          autoComplete='off'
          value={query} 
          onChange={handleChange} />
-        
         <input type='submit' value='search'/>
       </form>
-
       <div className='recipes'>
         {recipes!==[]&& recipes.map(e=>
         <Recipes key={uuidv4} e={e} />)
@@ -61,5 +55,4 @@ const [alert,setAlert] = useState("");
     </div>
   );
 }
-
 export default App;
