@@ -13,5 +13,5 @@ const Recipes = ({e})=>{
             {show &&<RecipesData ingredients={ingredients} />}
         </div>
     )
-}
+ } 
 export default Recipes
