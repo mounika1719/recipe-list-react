@@ -6,9 +6,8 @@ const RecipesData=({ingredients})=>{
             <ul className='ing-list' key={uuidv4()}>
             <li className='ing-text'>{e.text}</li>
             <li className='ing-weight'>{e.weight}</li>
-                   </ul>
+            </ul>
         )
     })
-      
 }
 export default RecipesData;
