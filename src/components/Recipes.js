@@ -4,7 +4,7 @@ const Recipes = ({e})=>{
     const[show,setShow] = useState(false)
     const{label,image,url,ingredients} = e.recipe;
     return(
-        <div className='recipe'>
+           <div className='recipe'>
             <h2>{label}</h2>
             <img src={image} alt={label} />
             <a href={url} target='_blank' rel='noopener
